@@ -4,13 +4,13 @@
 #ifndef __wlac_stdio_h__
 #define __wlac_stdio_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <stdio.h>, <stdio.h> )
 #include <stdio.h>
 #include <share.h>
-#if defined(_MSC_VER) && (_MSC_VER == 1900)
-#include "corecrt_io.h"
+#if defined(_MSC_VER) && (_MSC_VER >= 1900)
+#include <corecrt_io.h>
 #endif
 #pragma include_alias( <stdio.h>, <redesigned/stdio.h> )
 
