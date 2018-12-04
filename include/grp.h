@@ -17,6 +17,14 @@
 
 __BEGIN_C_DECLS
 
+struct group {
+	char   *gr_name;       /* group name */
+	char   *gr_passwd;     /* group password */
+	gid_t   gr_gid;        /* group ID */
+	char  **gr_mem;        /* group members */
+};
+
+GEM_API_FAR int getgrgid_r(gid_t gid, struct group *grp,char *buf, size_t buflen, struct group **result);
 
 __END_C_DECLS
 
