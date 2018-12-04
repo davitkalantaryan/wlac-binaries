@@ -36,6 +36,8 @@
 		(strrchr(__FILE__,'\\') ? (strrchr(__FILE__,'\\')+1) : __FILE__) )
 #endif
 
+
+#if ( !defined(__cplusplus)||defined(exit_redefination_needed) ) && !defined(exit_redefination_not_needed)
 #ifdef change_exit
 #define exit(__code)	\
 	do{ \
@@ -43,5 +45,6 @@
 		ExitProcess((__code)); \
 	}while(0)
 #endif  //#ifdef change_exit
+#endif  // #if ( !defined(__cplusplus)||defined(exit_redefination_needed) ) && !defined(exit_redefination_not_needed)
 
 #endif  /* #ifndef __gem_first_common_include_h__ */
