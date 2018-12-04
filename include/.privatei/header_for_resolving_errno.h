@@ -38,6 +38,8 @@ __END_C_DECLS
 
 //#define exit wlac_exit
 
+#if ( !defined(__cplusplus)||defined(exit_redefination_needed) ) && !defined(exit_redefination_not_needed)
+
 #ifdef SIGNAL_FOR_EXIT
 #define exit(_status_) \
 	do{ \
@@ -47,6 +49,8 @@ __END_C_DECLS
 #else
 #define exit _exit
 #endif
+
+#endif   // #if ( !defined(__cplusplus)||defined(exit_redefination_needed) ) && !defined(exit_redefination_not_needed)
 
 
 #endif  // #ifndef __wlac_dot_privatei_header_for_resolving_errno_h__
