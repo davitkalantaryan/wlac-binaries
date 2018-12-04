@@ -23,8 +23,8 @@ GEM_API_FAR int wlac_poll(struct pollfd *fds, nfds_t nfds, int timeout);
 
 __END_C_DECLS
 
-#ifndef _IGNORE_WLAC_POLL
+#if !defined(_IGNORE_WLAC_POLL) && !defined(poll)
 #define  poll wlac_poll
-#endif
+#endif  // #if !defined(_IGNORE_WLAC_POLL) && !defined(poll)
 
 #endif  /* #ifndef __win_poll_h__ */

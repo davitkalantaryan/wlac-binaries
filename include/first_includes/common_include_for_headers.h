@@ -91,5 +91,19 @@ __BEGIN_C_DECLS
 
 __END_C_DECLS
 
+#ifdef _MSC_VER
+
+#if !defined(quad_t) && !defined(quad_t_defined)
+#define quad_t_defined
+typedef __int64 quad_t;
+#endif  // #if !defined(quad_t) && !defined(quad_t_defined)
+
+#if !defined(u_quad_t) && !defined(u_quad_t_defined)
+#define u_quad_t_defined
+typedef unsigned __int64 u_quad_t;
+#endif  // #if !defined(quad_t) && !defined(quad_t_defined)
+
+#endif// #ifdef _MSC_VER
+
 
 #endif // #ifndef __common_include_for_headers_h__

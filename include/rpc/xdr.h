@@ -248,7 +248,8 @@ struct xdr_discrim {
 #ifndef __P
 #define __P(a)	a
 #endif
-#define	xdr_longlong_t	xdr_long
+#define	xdr_longlong_t		xdr_long
+#define	xdr_u_longlong_t	xdr_u_long
 
 
 LINKAGE_HDR bool_t	xdr_void __P((XDR *__xdrs));
