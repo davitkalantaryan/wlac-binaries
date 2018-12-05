@@ -87,9 +87,9 @@ static int Construncor_##_constructor_function_(void)\
 
 #ifndef NETLIB_CONSTRUCT_DESTRUCT
 #if defined(_USRDLL)
-#define NETLIB_CONSTRUCT_DESTRUCT(_constructor_function_,_destructor_function_) \
+#define NETLIB_CONSTRUCT_DESTRUCT(_constructor_function_,_destructor_function_,_extra_) \
 NETLIB_CONSTRUCT_DESTRUCT_BASE(_constructor_function_,_destructor_function_) \
-BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) \
+EXPORT_TO_LIB_API BOOL WINAPI DllMain##_extra_(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) \
 {\
 	switch (fdwReason) \
 	{\
@@ -101,16 +101,17 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) \
 	default: break; \
 	}\
 	return TRUE;\
-}
+} \
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved){return DllMain##_extra_(hinstDLL,fdwReason,lpvReserved);}
 #else  // #if defined(_USRDLL)
-#define NETLIB_CONSTRUCT_DESTRUCT(_constructor_function_,_destructor_function_) \
+#define NETLIB_CONSTRUCT_DESTRUCT(_constructor_function_,_destructor_function_,_extra_) \
 NETLIB_CONSTRUCT_DESTRUCT_BASE(_constructor_function_,_destructor_function_) \
-class netlib_cons_destr \
+class netlib_cons_destr##_extra_ \
 { \
 public: \
-	netlib_cons_destr(void) \
+	netlib_cons_destr##_extra_(void) \
 		{Construncor_##_constructor_function_();} \
-	~netlib_cons_destr(){Destructor_##_destructor_function_();} \
+	~netlib_cons_destr##_extra_(){Destructor_##_destructor_function_();} \
 }; \
 static volatile netlib_cons_destr  s_netlib_cons_destr_;
 #endif // #if defined(_USRDLL)
