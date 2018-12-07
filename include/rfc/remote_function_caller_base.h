@@ -34,9 +34,11 @@ typedef unsigned __int64	_uint64_ttt;
 #define	NEW_THREAD_INFO					5
 #define	FREEING_LIBRARY					6
 
-#ifdef WIN32
+#ifdef _WIN32
 
-#include <windows.h>
+#include <WinSock2.h>
+#include <WS2tcpip.h>
+#include <Windows.h>
 #include <stdio.h>
 #include <stddef.h>
 
