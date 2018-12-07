@@ -19,7 +19,11 @@
 #ifdef mkdir
 #undef mkdir
 #endif
+#ifdef mkdir_windows_style_needed
+#define mkdir		_mkdir
+#else
 #define mkdir(_a_path_,_a_permission_) _mkdir((_a_path_))
+#endif
 
 __BEGIN_C_DECLS
 
