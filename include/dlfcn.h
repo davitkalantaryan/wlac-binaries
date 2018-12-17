@@ -19,8 +19,9 @@
 #define	DL_ERROR_BUFFER_LENGTH	1024
 #define	RTLD_LAZY				(LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE|LOAD_LIBRARY_AS_IMAGE_RESOURCE)
 
-#define dlopen(_fileName,_flag)		( (void*)LoadLibraryExA((_fileName),NULL,(_flag))	)
-#define dlclose(_handle)			FreeLibrary((HMODULE)(_handle))
+#define dlopen(_fileName,_flag)			( (void*)LoadLibraryExA((_fileName),NULL,(_flag))	)
+#define dlclose(_handle)				FreeLibrary((HMODULE)(_handle))
+#define	dlsym(_handle, _symbolName)		( (void*)GetProcAddress((HMODULE)(_handle),(_symbolName)) )
 
 __BEGIN_C_DECLS
 
