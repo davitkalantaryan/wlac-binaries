@@ -20,6 +20,7 @@ __BEGIN_C_DECLS
 //GEM_API_FAR int poll_sockets(struct pollfd *fds, nfds_t nfds, int timeout);
 
 #define dlopen(_fileName,_flag)		( (void*)LoadLibraryExA((_fileName),NULL,(_flag))	)
+#define dlerror()					"UnknownError"  // this should be implemented as a function
 
 __END_C_DECLS
 
