@@ -5,11 +5,11 @@
 #ifndef __wlac_redesigned_string_h__
 #define __wlac_redesigned_string_h__
 
-#include <first_includes/common_include_for_headers.h>
+// if we are here then include below is included
+//#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <string.h>, <string.h> )
 #include <string.h>
-#pragma include_alias( <string.h>, <redesigned/string.h> )
 
 __BEGIN_C_DECLS
 

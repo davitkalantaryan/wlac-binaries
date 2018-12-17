@@ -7,24 +7,12 @@
 #ifndef __wlac_windows_h__
 #define __wlac_windows_h__
 
-//#error hi hi hi
 
-#include <first_includes/common_include_for_headers.h>
-
-#pragma include_alias( <windows.h>, <windows.h> )
-
-#ifndef __win_raw_socket_h__     // socket header is not included
-#ifndef _WINSOCK2API_
-#include <WinSock2.h>
+#include <.privatei/windows_and_socket_headers.h>
+#ifndef __BEGIN_C_DECLS
+#include <first_includes/common_definations_wul.h>
 #endif
-#ifndef _WS2TCPIP_H_
-#include <WS2tcpip.h>
-#endif
-#endif  // #ifdef __wlac_win_socket_common_h__
 
-#include <windows.h>
-
-#pragma include_alias( <windows.h>, <redesigned/windows.h> )
 
 __BEGIN_C_DECLS
 

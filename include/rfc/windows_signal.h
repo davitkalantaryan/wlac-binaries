@@ -11,8 +11,9 @@
 #define __wlac_windows_signal_h__
 
 #pragma include_alias( <signal.h>, <signal.h> )
+#pragma include_alias( "signal.h", "signal.h" )
+
 #include <signal.h>
-#pragma include_alias( <signal.h>, <redesigned/signal.h> )
 
 #ifndef UNIX_SIGNALS_DEFINED
 #define UNIX_SIGNALS_DEFINED

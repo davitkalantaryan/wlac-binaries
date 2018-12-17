@@ -7,9 +7,10 @@
 #define __wlac_redesigend_process_h__
 
 #pragma include_alias( <process.h>, <process.h> )
+#pragma include_alias( "process.h", "process.h" )
 #include <process.h>
-#pragma include_alias( <process.h>, <redesigned/process.h> )
+#include <Windows.h>
 
-#define getpid _getpid
+#define getpid GetCurrentProcessId
 
 #endif  // #ifndef __wlac_redesigend_process_h__

@@ -6,21 +6,26 @@
 #define __wlac_dlfcn_h__
 
 #include <first_includes/common_include_for_headers.h>
+
+
 #include <WinSock2.h>
-#include <Windows.h>
 #include <WS2tcpip.h>
+#include <Windows.h>
+
 
 // https://linux.die.net/man/3/dlopen
 // https://docs.microsoft.com/en-us/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa
 
-__BEGIN_C_DECLS
-
-#define  RTLD_LAZY (LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE|LOAD_LIBRARY_AS_IMAGE_RESOURCE)
-
-//GEM_API_FAR int poll_sockets(struct pollfd *fds, nfds_t nfds, int timeout);
+#define	DL_ERROR_BUFFER_LENGTH	1024
+#define	RTLD_LAZY				(LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE|LOAD_LIBRARY_AS_IMAGE_RESOURCE)
 
 #define dlopen(_fileName,_flag)		( (void*)LoadLibraryExA((_fileName),NULL,(_flag))	)
-#define dlerror()					"UnknownError"  // this should be implemented as a function
+#define dlclose(_handle)			FreeLibrary((HMODULE)(_handle))
+
+__BEGIN_C_DECLS
+
+
+GEM_API_FAR char *dlerror(void);
 
 __END_C_DECLS
 

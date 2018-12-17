@@ -74,6 +74,13 @@
 #pragma include_alias( <windows.h>, <redesigned/windows.h> )
 #pragma include_alias( "windows.h", "redesigned/windows.h" )
 
+#pragma include_alias( <WinSock2.h>, <redesigned/WinSock2.h> )
+#pragma include_alias( "WinSock2.h", "redesigned/WinSock2.h" )
+
+
+#pragma include_alias( <WS2tcpip.h>, <redesigned/WS2tcpip.h> )
+#pragma include_alias( "WS2tcpip.h", "redesigned/WS2tcpip.h" )
+
 #pragma include_alias( <stddef.h>, <redesigned/stddef.h> )
 #pragma include_alias( "stddef.h", "redesigned/stddef.h" )
 
