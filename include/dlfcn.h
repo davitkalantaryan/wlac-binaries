@@ -1,5 +1,6 @@
 //
-//
+// file:		dlfcn.h
+// created on:	2018 Dec 17
 //
 #ifndef __wlac_dlfcn_h__
 #define __wlac_dlfcn_h__
@@ -9,7 +10,12 @@
 #include <Windows.h>
 #include <WS2tcpip.h>
 
+// https://linux.die.net/man/3/dlopen
+// https://docs.microsoft.com/en-us/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa
+
 __BEGIN_C_DECLS
+
+#define  RTLD_LAZY (LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE|LOAD_LIBRARY_AS_IMAGE_RESOURCE)
 
 //GEM_API_FAR int poll_sockets(struct pollfd *fds, nfds_t nfds, int timeout);
 
