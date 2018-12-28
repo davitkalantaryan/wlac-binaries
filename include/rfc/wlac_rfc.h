@@ -7,6 +7,9 @@
 #define __wlac_rfc_wlac_rfc_h__
 
 #include <first_includes/common_definations_wul.h>
+#ifndef CINTERFACE
+#define CINTERFACE
+#endif // !CINTERFACE
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 #include <windows.h>
