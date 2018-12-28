@@ -1,3 +1,6 @@
+// 
+// (c) 2016-2018 WLAC. For details refers to LICENSE.md
+//
 /*
  *	File: <alloca.h> For WINDOWS MFC
  *
