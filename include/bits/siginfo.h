@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <bits/siginfo.h> For WINDOWS MFC
  *
@@ -10,7 +14,7 @@
 #ifndef __win_bits_siginfo_h___
 #define __win_bits_siginfo_h___
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <time.h>
 
 #ifdef _WIN64

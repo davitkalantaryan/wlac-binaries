@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // wlac/redesigned/stddef.h
 // to incude #include <redesigned/stddef.h>
@@ -8,12 +11,9 @@
 #define __wlac_redesigned_stddef_h__
 
 
-//#include <first_includes/common_include_for_headers.h>
+#include <first_includes/common_include_for_headers.h>
 #include <.privatei/header_for_resolving_errno.h>
 
-//#pragma include_alias( <stddef.h>, <stddef.h> )
-//#include <stddef.h>
-//#pragma include_alias( <stddef.h>, <redesigned/stddef.h> )
 
 __BEGIN_C_DECLS
 

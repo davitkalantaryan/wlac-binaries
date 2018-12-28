@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: windows_signal.h For WINDOWS
  *
@@ -76,7 +80,7 @@ extern "C"
 {
 #endif
 
-#include "bits/siginfo.h"
+#include <bits/siginfo.h>
 
 typedef void (__cdecl * win_signal_handler_type)(int);
 typedef void(*signal_handler_simple_type)(int);

@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/wait.h> For WINDOWS MFC
  *
@@ -9,8 +13,8 @@
 #ifndef __win_sys_wait_h__
 #define __win_sys_wait_h__
 
-#include "first_includes/common_include_for_headers.h"
-#include "sys/cdef.h"
+#include <first_includes/common_include_for_headers.h>
+#include <sys/cdef.h>
 #include <sdef_gem_windows.h>
 #include <linux/limits.h>
 #include <bits/resource.h>

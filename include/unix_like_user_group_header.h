@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // unix_like_user_group_header.h
 // 2017 Dec 30

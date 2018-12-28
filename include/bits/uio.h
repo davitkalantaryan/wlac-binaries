@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/uio.h> For WINDOWS MFC
  *
@@ -32,7 +36,7 @@ Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
 #ifndef _BITS_UIO_H
 #define _BITS_UIO_H	1
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <sdef_gem_windows.h>
 #include <sys/types.h>
 

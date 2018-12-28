@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <new_winldap_common_include.h> 
  *
@@ -9,9 +13,9 @@
 #ifndef __new_winldap_new_winldap_common_include_h__
 #define __new_winldap_new_winldap_common_include_h__
 
+#include <first_includes/common_definations_wul.h>
 #include <windows.h>
 #include <winldap.h>
-#include <first_includes/common_definations_wul.h>
 
 
 #if !defined(NWLDAP_LIB_NOT_INCLUDE)

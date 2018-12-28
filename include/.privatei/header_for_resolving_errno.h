@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // header_for_resolving_errno.h
 // 2017 Dec 29

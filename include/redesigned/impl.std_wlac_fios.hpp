@@ -1,10 +1,12 @@
-
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // std_wlac_fios.impl.hpp
 // 2017 Dec 07
 
-#ifndef __std_wlac_fios_impl_hpp__
-#define __std_wlac_fios_impl_hpp__
+#ifndef __impl_std_wlac_fios_hpp__
+#define __impl_std_wlac_fios_hpp__
 
 #ifndef __std_wlac_fios_hpp__
 #error does not include this file directly!
@@ -37,4 +39,4 @@ std::wlac_fios<TypeFios>::wlac_fios(const std::string& a_filename, ios_base::ope
 }
 
 
-#endif  // #ifndef __std_wlac_fios_impl_hpp__
+#endif  // #ifndef __impl_std_wlac_fios_hpp__

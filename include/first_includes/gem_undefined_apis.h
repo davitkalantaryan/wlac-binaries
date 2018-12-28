@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <first_includes\gem_undefined_apis.h> For WINDOWS 
  *

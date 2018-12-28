@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <bits/ioctls.h> For WINDOWS MFC
  *
@@ -9,7 +13,7 @@
 #ifndef __win_bits_ioctls_h__
 #define __win_bits_ioctls_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #ifndef __win_sys_ioctl_h__
 #error "Never use <bits/ioctls.h> directly; include <sys/ioctl.h> instead."

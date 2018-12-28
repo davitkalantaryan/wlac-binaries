@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <gem_errno.h> For WINDOWS MFC
  *
@@ -10,7 +14,7 @@
 #define __wlac_redesigned_errno_h__
 
 
-//#include <first_includes/common_include_for_headers.h>
+#include <first_includes/common_include_for_headers.h>
 #include <.privatei/header_for_resolving_errno.h>
 
 //#pragma include_alias( <errno.h>, <errno.h> )

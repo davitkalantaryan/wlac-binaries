@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/systeminfo.h> For WINDOWS MFC
  *  This file is not standard file, but is needed for rpc_bind service
@@ -10,7 +14,7 @@
 #ifndef __win_sys_systeminfo_h___
 #define __win_sys_systeminfo_h___
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <sdef_gem_windows.h>
 
 

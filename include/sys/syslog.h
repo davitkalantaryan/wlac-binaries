@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/syslog.h> For WINDOWS MFC
  *
@@ -29,7 +33,7 @@
 #define	LOG_INFO	6	/* informational */
 #define	LOG_DEBUG	7	/* debug-level messages */
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <sdef_gem_windows.h>
 
 __BEGIN_C_DECLS

@@ -1,10 +1,13 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // 2017 Dec 22
 
 #ifndef __WLAC_REDESIGNED_RPC_HEADER__
 #define __WLAC_REDESIGNED_RPC_HEADER__
 
-//#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <rpc.h>, <rpc.h> )
 #pragma include_alias( "rpc.h", "rpc.h" )

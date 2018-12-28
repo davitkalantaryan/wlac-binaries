@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // wlac/redesigned/fstream
 // 2017 Dec 07
@@ -5,12 +8,12 @@
 #ifndef __wlac_redesigen_fstream__
 #define __wlac_redesigen_fstream__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <fstream>, <fstream> )
+#pragma include_alias( "fstream", "fstream" )
 #include <fstream>
 #include "std_wlac_fios.hpp"
-#pragma include_alias( <fstream>, <redesigned/fstream> )
 
 namespace std{
 	typedef wlac_fios<::std::fstream> wlac_fstream;

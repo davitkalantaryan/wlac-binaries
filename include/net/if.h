@@ -1,7 +1,11 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 #ifndef __win_net_if_h__
 #define __win_net_if_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <win_socket_common.h>
 #include <sys/cdefs.h>
 

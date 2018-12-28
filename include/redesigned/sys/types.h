@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/types_new.h> For WINDOWS MFC
  *
@@ -12,10 +16,10 @@
 #include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <sys/types.h>, <sys/types.h> )
+#pragma include_alias( "sys/types.h", "sys/types.h" )
 #include <bits/mman.h>
 #include <win_socket_common.h>
 #include <sys/types.h>
-#pragma include_alias( <sys/types.h>, <redesigned/sys/types.h> )
 
 #ifndef O_RDONLY
 #define O_RDONLY _O_RDONLY

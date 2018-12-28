@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // wlac/redesigned/stdlib.h
 // 2017 Dec 07

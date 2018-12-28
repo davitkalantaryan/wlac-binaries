@@ -1,4 +1,6 @@
-
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // windows.h
 // 2017 Dec 24
