@@ -115,5 +115,9 @@ typedef unsigned __int64 u_quad_t;
 
 #endif// #ifdef _MSC_VER
 
+#ifndef WLAC_TMP_API
+#define WLAC_TMP_API
+#endif
+
 
 #endif // #ifndef __common_include_for_headers_h__
