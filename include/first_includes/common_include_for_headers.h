@@ -9,6 +9,10 @@
 #ifndef __common_include_for_headers_h__
 #define __common_include_for_headers_h__
 
+#ifdef _MSC_VER
+//#define INCLUDE_NEXT	#include
+#endif
+
 #ifndef _WIN64
 // In the UNIX like systems sizeof(time_t)==sizeof(void*)==sizeof(long)
 #if !defined(_USE_32BIT_TIME_T)
