@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // 2017 Dec 07
 
@@ -7,12 +10,12 @@
 #include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <stdio.h>, <stdio.h> )
+#pragma include_alias( "stdio.h", "stdio.h" )
 #include <stdio.h>
 #include <share.h>
 #if defined(_MSC_VER) && (_MSC_VER >= 1900)
 #include <corecrt_io.h>
 #endif
-#pragma include_alias( <stdio.h>, <redesigned/stdio.h> )
 
 __BEGIN_C_DECLS
 

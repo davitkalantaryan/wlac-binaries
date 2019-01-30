@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: functions_libgui_hacker_base.h
  *
@@ -16,6 +20,8 @@
 #ifndef __functions_libgui_hacker_base_h__
 #define __functions_libgui_hacker_base_h__
 
+#include <WinSock2.h>
+#include <WS2tcpip.h>
 #include <windows.h>
 
 

@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // common_include_for_headers.h
 // 2017 Dec 06
@@ -5,6 +8,10 @@
 
 #ifndef __common_include_for_headers_h__
 #define __common_include_for_headers_h__
+
+#ifdef _MSC_VER
+//#define INCLUDE_NEXT	#include
+#endif
 
 #ifndef _WIN64
 // In the UNIX like systems sizeof(time_t)==sizeof(void*)==sizeof(long)
@@ -74,6 +81,13 @@
 #pragma include_alias( <windows.h>, <redesigned/windows.h> )
 #pragma include_alias( "windows.h", "redesigned/windows.h" )
 
+#pragma include_alias( <WinSock2.h>, <redesigned/WinSock2.h> )
+#pragma include_alias( "WinSock2.h", "redesigned/WinSock2.h" )
+
+
+#pragma include_alias( <WS2tcpip.h>, <redesigned/WS2tcpip.h> )
+#pragma include_alias( "WS2tcpip.h", "redesigned/WS2tcpip.h" )
+
 #pragma include_alias( <stddef.h>, <redesigned/stddef.h> )
 #pragma include_alias( "stddef.h", "redesigned/stddef.h" )
 
@@ -104,6 +118,10 @@ typedef unsigned __int64 u_quad_t;
 #endif  // #if !defined(quad_t) && !defined(quad_t_defined)
 
 #endif// #ifdef _MSC_VER
+
+#ifndef WLAC_TMP_API
+#define WLAC_TMP_API
+#endif
 
 
 #endif // #ifndef __common_include_for_headers_h__

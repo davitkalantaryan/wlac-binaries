@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <strings.h> For WINDOWS MFC
  *
@@ -6,7 +10,7 @@
  *
  *
  */
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <sys/cdefs.h>
 #include <stddef.h>
 #include <memory.h>

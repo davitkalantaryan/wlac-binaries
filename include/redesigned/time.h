@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <time_new.h> For WINDOWS MFC
  *
@@ -9,11 +13,12 @@
 #ifndef __win_time_new_h__
 #define __win_time_new_h__
 
-#include "first_includes/common_include_for_headers.h"
+// if we are here then include below is included
+//#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <time.h>, <time.h> )
+#pragma include_alias( "time.h", "time.h" )
 #include <time.h>
-#pragma include_alias( <time.h>, <redesigned/time.h> )
 
 #ifdef strftime
 #undef strftime

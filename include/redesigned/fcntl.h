@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <redisagned/fcntl.h> For WINDOWS MFC
  *
@@ -10,11 +14,11 @@
 #ifndef __win_fcntl_h__
 #define __win_fcntl_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <fcntl.h>, <fcntl.h> )
+#pragma include_alias( "fcntl.h", "fcntl.h" )
 #include <fcntl.h>
-#pragma include_alias( <fcntl.h>, <redesigned/fcntl.h> )
 
 
 #ifndef F_RDLCK

@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // wlac/redesigned/stdlib.h
 // 2017 Dec 07
@@ -8,9 +11,6 @@
 #include <first_includes/common_include_for_headers.h>
 #include <.privatei/header_for_resolving_errno.h>
 
-//#pragma include_alias( <stdlib.h>, <stdlib.h> )
-//#include <stdlib.h>
-//#pragma include_alias( <stdlib.h>, <redesigned/stdlib.h> )
 
 __BEGIN_C_DECLS
 

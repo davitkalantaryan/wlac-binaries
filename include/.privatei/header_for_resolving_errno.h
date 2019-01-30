@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // header_for_resolving_errno.h
 // 2017 Dec 29
@@ -5,17 +8,22 @@
 #ifndef __wlac_dot_privatei_header_for_resolving_errno_h__
 #define __wlac_dot_privatei_header_for_resolving_errno_h__
 
-#include <first_includes/common_include_for_headers.h>
+//#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <errno.h>, <errno.h> )
 #pragma include_alias( <stddef.h>, <stddef.h> )
 #pragma include_alias( <stdlib.h>, <stdlib.h> )
+
+#pragma include_alias( "errno.h", "errno.h" )
+#pragma include_alias( "stddef.h", "stddef.h" )
+#pragma include_alias( "stdlib.h", "stdlib.h" )
+
 #include <errno.h>
 #include <stddef.h>
 #include <stdlib.h>
-#pragma include_alias( <stdlib.h>, <redesigned/stdlib.h> )
-#pragma include_alias( <stddef.h>, <redesigned/stddef.h> )
-#pragma include_alias( <errno.h>, <redesigned/errno.h> )
+//#pragma include_alias( <stdlib.h>, <redesigned/stdlib.h> )
+//#pragma include_alias( <stddef.h>, <redesigned/stddef.h> )
+//#pragma include_alias( <errno.h>, <redesigned/errno.h> )
 
 __BEGIN_C_DECLS
 

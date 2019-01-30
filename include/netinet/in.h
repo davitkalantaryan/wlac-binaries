@@ -1,11 +1,12 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <netinet/in.h> For WINDOWS MFC
  *
  *	Created on: Dec 10, 2015
  *	Author    : Davit Kalantaryan (Email: davit.kalantaryan@desy.de)
- *            : Anushavan Azatyan (Email: anushavan.azatyan@desy.de)
- *
- * //
  *
  *
  */

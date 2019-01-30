@@ -8,8 +8,8 @@
 #define __wlac_redesigen_ofstream__
 
 #pragma include_alias( <ofstream>, <ofstream> )
+#pragma include_alias( "ofstream", "ofstream" )
 #include <ofstream>
-#pragma include_alias( <ofstream>, <redesigned/ofstream> )
 #include "std_wlac_fios.hpp"
 
 namespace std {

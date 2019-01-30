@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/cdef.h> For WINDOWS MFC
  *
@@ -9,8 +13,8 @@
 #ifndef __win_sys_cdef_h___
 #define __win_sys_cdef_h___
 
-#include "first_includes/common_include_for_headers.h"
-#include "redesigned/sys/types.h"
+#include <first_includes/common_include_for_headers.h>
+#include <redesigned/sys/types.h>
 
 #ifndef bool_t
 #define	bool_t	int

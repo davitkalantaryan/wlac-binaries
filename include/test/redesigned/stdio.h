@@ -4,8 +4,8 @@
 #define __wlac_stdio2_h__
 
 #pragma include_alias( <stdio.h>, <stdio.h> )
+#pragma include_alias( "stdio.h", "stdio.h" )
 #include <stdio.h>
-#pragma include_alias( <stdio.h>, <redesigned/stdio.h> )
 #include <share.h>
 
 #ifdef __cplusplus

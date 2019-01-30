@@ -1,18 +1,19 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/errno.h> For WINDOWS MFC
  *
  *	Created on: Dec 11, 2015
  *	Author    : Davit Kalantaryan (Email: davit.kalantaryan@desy.de)
- *            : Anushavan Azatyan (Email: anushavan.azatyan@desy.de)
- *
- * //
  *
  *
  */
 #ifndef __win_sys_errno_h__
 #define __win_sys_errno_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <errno.h>
 #include <process.h>
 

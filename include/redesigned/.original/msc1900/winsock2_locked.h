@@ -1,4 +1,6 @@
-
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 /* Winsock2.h -- definitions to be used with the WinSock 2 DLL and
  *               WinSock 2 applications.

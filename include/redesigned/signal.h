@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <strings.h> For WINDOWS MFC
  *
@@ -9,9 +13,10 @@
 #ifndef __win_signal_new_h__
 #define __win_signal_new_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <signal.h>, <signal.h> )
+#pragma include_alias( "signal.h", "signal.h" )
 #include <signal.h>
 
 #include <rfc/windows_signal.h>
@@ -92,8 +97,6 @@ __END_C_DECLS
 // from remote_function_call project
 #include <rfc/windows_signal.h> 
 #include <rfc/remote_function_caller.h>
-
-#pragma include_alias( <signal.h>, <redesigned/signal.h> )
 
 
 #endif  /* #ifndef __win_signal_new_h__ */

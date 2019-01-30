@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // process.h
 // 2017 Dec 07
@@ -6,9 +9,10 @@
 #ifndef __wlac_redesigend_process_h__
 #define __wlac_redesigend_process_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <process.h>, <process.h> )
+#pragma include_alias( "process.h", "process.h" )
 
 #ifdef exit
 #define exit_defined_before_process_h
@@ -23,7 +27,6 @@
 #endif
 
 #include <.privatei/header_for_resolving_errno.h>
-#pragma include_alias( <process.h>, <redesigned/process.h> )
 
 #include <stdio.h>
 #include <string.h>

@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sdef_gem_windows.h> 
  *
@@ -12,7 +16,7 @@
 #ifndef __win_sdef_gem_windows_h__
 #define __win_sdef_gem_windows_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <first_includes/gem_undefined_apis.h>
 #include <windows.h>
 

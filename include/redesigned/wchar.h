@@ -1,3 +1,6 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
 
 // redesigned/wchar.h
 // 2017 Dec 07
@@ -23,11 +26,11 @@
  *
  ****/
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 #pragma include_alias( <wchar.h>, <wchar.h> )
+#pragma include_alias( "wchar.h", "wchar.h" )
 #include <wchar.h>
-#pragma include_alias( <wchar.h>, <redesigned/wchar.h> )
 
 
 __BEGIN_C_DECLS

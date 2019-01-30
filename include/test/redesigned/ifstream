@@ -7,8 +7,8 @@
 #define __wlac_redesigen_ifstream__
 
 #pragma include_alias( <ifstream>, <ifstream> )
+#pragma include_alias( "ifstream", "ifstream" )
 #include <ifstream>
-#pragma include_alias( <ifstream>, <redesigned/ifstream> )
 #include "std_wlac_fios.hpp"
 
 namespace std{

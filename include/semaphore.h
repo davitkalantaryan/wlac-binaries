@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <semaphore.h> For WINDOWS MFC
  *
@@ -9,7 +13,7 @@
 #ifndef __win_semaphore_h__
 #define __win_semaphore_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <features.h>
 #include <sys/types.h>
 #ifdef __USE_XOPEN2K

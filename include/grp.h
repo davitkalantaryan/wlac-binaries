@@ -1,5 +1,9 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
- *	File: <netdb.h> For WINDOWS MFC
+ *	File: <grp.h> For WINDOWS MFC
  *
  *	Created on: Dec 21, 2015
  *	Author    : Davit Kalantaryan (Email: davit.kalantaryan@desy.de)

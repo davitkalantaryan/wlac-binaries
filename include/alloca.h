@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <alloca.h> For WINDOWS MFC
  *
@@ -9,7 +13,7 @@
 #ifndef __win_alloca_h__
 #define __win_alloca_h__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 #include <sdef_gem_windows.h>
 #include <malloc.h>
 

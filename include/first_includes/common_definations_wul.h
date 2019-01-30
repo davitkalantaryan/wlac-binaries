@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <common_definations_wul.h> 
  *
@@ -58,6 +62,13 @@
 #define PATH_CHAR	'/'
 #endif
 
+#ifndef WUL_EXTERN_C
+#ifdef __cplusplus
+#define WUL_EXTERN_C	extern "C"
+#else
+#define WUL_EXTERN_C
+#endif
+#endif
 
 #ifndef __BEGIN_C_DECLS
 #ifdef __cplusplus
@@ -83,8 +94,10 @@
 #endif  // #ifdef _MSC_VER
 
 #ifdef _MSC_VER
-#define SET_WLAC_ALIAS(_file_)	__pragma (include_alias(#_file_, "redesigned/##_file_"))
-#define RESET_WLAC_ALIAS(_file_)	__pragma (include_alias(#_file_, "redesigned/##_file_"))
+#define SET_WLAC_ALIAS(_file_)		__pragma (include_alias(<##_file_>, <redesigned/##_file_>)) \
+									__pragma (include_alias("##_file_", "redesigned/##_file_"))
+#define RESET_WLAC_ALIAS(_file_)	__pragma (include_alias("##_file_", "##_file_")); \
+									__pragma (include_alias(<##_file_>, <##_file_>))
 #endif // #ifdef _MSC_VER
 
 #ifndef GEM_API_FAR

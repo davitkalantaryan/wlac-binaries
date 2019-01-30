@@ -1,11 +1,12 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <sys/socket.h> For WINDOWS MFC
  *
  *	Created on: Dec 11, 2015
  *	Author    : Davit Kalantaryan (Email: davit.kalantaryan@desy.de)
- *            : Anushavan Azatyan (Email: anushavan.azatyan@desy.de)
- *
- * //
  *
  *
  */

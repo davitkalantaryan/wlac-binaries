@@ -1,3 +1,7 @@
+// 
+// (c) 2015-2018 WLAC. For details refers to LICENSE.md
+//
+
 /*
  *	File: <netinet/tcp.h> For WINDOWS MFC
  *
@@ -9,7 +13,7 @@
 #ifndef __netinet_tcp_h_for_wlac__
 #define __netinet_tcp_h_for_wlac__
 
-#include "first_includes/common_include_for_headers.h"
+#include <first_includes/common_include_for_headers.h>
 
 __BEGIN_C_DECLS
 
