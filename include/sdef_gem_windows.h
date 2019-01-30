@@ -112,8 +112,8 @@ public: \
 	netlib_cons_destr##_extra_(void) \
 		{Construncor_##_constructor_function_();} \
 	~netlib_cons_destr##_extra_(){Destructor_##_destructor_function_();} \
-}; \
-static volatile netlib_cons_destr  s_netlib_cons_destr_;
+}static volatile s_netlib_cons_destr_; 
+//static volatile netlib_cons_destr##extra  s_netlib_cons_destr_;
 #endif // #if defined(_USRDLL)
 #endif // #ifndef NETLIB_CONSTRUCT_DESTRUCT
 
