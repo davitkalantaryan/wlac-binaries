@@ -42,7 +42,7 @@
 #define __TARGET_OS__	"LINUX"
 #endif
 
-#if (defined(_WIN64) | defined(_WIN32) ) & !defined(WIN32)
+#if (defined(_WIN64) | defined(_WIN32) ) & !defined(WIN32) & !defined(WIN32_DO_NOT_DEFINE)
 #define WIN32
 #endif
 
